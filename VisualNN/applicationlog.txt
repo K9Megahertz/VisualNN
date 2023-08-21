@@ -1,0 +1,51 @@
+[2023-08-20 18:39:52 : INFO] *********************************
+[2023-08-20 18:39:52 : INFO] *        Logging Sarted         *
+[2023-08-20 18:39:52 : INFO] *********************************
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:52 : INFO] Initializing OpenGL
+[2023-08-20 18:39:52 : INFO] Initializing
+[2023-08-20 18:39:52 : INFO] Done!
+[2023-08-20 18:39:52 : INFO] Generated Vertex Array with id: 1
+[2023-08-20 18:39:52 : INFO]   Generated Vertex Buffer with id: 1
+[2023-08-20 18:39:52 : INFO]   Generated Index Buffer with id: 2
+[2023-08-20 18:39:52 : INFO] Generated Vertex Array with id: 2
+[2023-08-20 18:39:52 : INFO]   Generated Vertex Buffer with id: 3
+[2023-08-20 18:39:52 : INFO]   Generated Index Buffer with id: 4
+[2023-08-20 18:39:52 : INFO] Generated Vertex Array with id: 3
+[2023-08-20 18:39:52 : INFO]   Generated Vertex Buffer with id: 5
+[2023-08-20 18:39:52 : INFO]   Generated Index Buffer with id: 6
+[2023-08-20 18:39:52 : INFO]   Generated Instance Buffer with id: 7
+[2023-08-20 18:39:52 : INFO] Generated Vertex Array with id: 4
+[2023-08-20 18:39:52 : INFO]   Generated Vertex Buffer with id: 8
+[2023-08-20 18:39:52 : INFO] Reading in mnist image data: ./mnistdata/train-images.idx3-ubyte
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:52 : INFO] Reading in mnist label data: ./mnistdata/train-labels.idx1-ubyte
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:52 : INFO] Reading in map file: ./nnexamples/mnistbase_784_576_256_10 output at 20 epochs.txt
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:52 : INFO] ****************************************
+[2023-08-20 18:39:52 : INFO] * Reading in Neural Network Definition *
+[2023-08-20 18:39:52 : INFO] ****************************************
+[2023-08-20 18:39:52 : INFO] 
+[2023-08-20 18:39:53 : INFO] Read in 4 Layers
+[2023-08-20 18:39:53 : INFO] 
+[2023-08-20 18:39:53 : INFO] 
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/0-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/1-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/2-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/3-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/4-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/5-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/6-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/7-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/8-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Creating Texture: textures/9-whiteonblack.png
+[2023-08-20 18:39:53 : INFO] Loaded Shader!
+[2023-08-20 18:39:53 : INFO] Loaded Shader!
+[2023-08-20 18:39:53 : INFO] Loaded Shader!
+[2023-08-20 18:40:07 : INFO] Cleaning Up
+[2023-08-20 18:40:08 : INFO] Done!

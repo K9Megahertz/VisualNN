@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f868a813-3a5b-4d4b-949b-2e64fa5b2eb2}</ProjectGuid>
+    <RootNamespace>VisualNN</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\glew-2.1.0\include;C:\glm</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\glew-2.1.0\lib\Release\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glu32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\glew-2.1.0\include;C:\glm</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\glew-2.1.0\lib\Release\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glu32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ai\layer.cpp" />
+    <ClCompile Include="ai\mnist\mnistdataset.cpp" />
+    <ClCompile Include="ai\mnist\mnistdatasetreader.cpp" />
+    <ClCompile Include="ai\mnist\mnistimage.cpp" />
+    <ClCompile Include="ai\neuralnet.cpp" />
+    <ClCompile Include="ai\neuralnettrainer.cpp" />
+    <ClCompile Include="ai\neuralnetworkfilereader.cpp" />
+    <ClCompile Include="ai\neuralnetworkfilewriter.cpp" />
+    <ClCompile Include="ai\neuron.cpp" />
+    <ClCompile Include="objects\cube.cpp" />
+    <ClCompile Include="objects\materialgenerator.cpp" />
+    <ClCompile Include="objects\mesh.cpp" />
+    <ClCompile Include="objects\meshgenerator.cpp" />
+    <ClCompile Include="objects\modeltransform.cpp" />
+    <ClCompile Include="objects\object.cpp" />
+    <ClCompile Include="objects\quad.cpp" />
+    <ClCompile Include="objects\sphere.cpp" />
+    <ClCompile Include="objects\torus.cpp" />
+    <ClCompile Include="objects\triangle.cpp" />
+    <ClCompile Include="objects\triforce.cpp" />
+    <ClCompile Include="renderer\buffers\indexbuffer.cpp" />
+    <ClCompile Include="renderer\buffers\instancebuffer.cpp" />
+    <ClCompile Include="renderer\buffers\vertexarray.cpp" />
+    <ClCompile Include="renderer\buffers\vertexbuffer.cpp" />
+    <ClCompile Include="renderer\glerror.cpp" />
+    <ClCompile Include="renderer\instancegroup.cpp" />
+    <ClCompile Include="renderer\linegroup.cpp" />
+    <ClCompile Include="renderer\material.cpp" />
+    <ClCompile Include="renderer\renderer.cpp" />
+    <ClCompile Include="renderer\shader.cpp" />
+    <ClCompile Include="renderer\texture.cpp" />
+    <ClCompile Include="system\BaseWindowsApp.cpp" />
+    <ClCompile Include="util\logger.cpp" />
+    <ClCompile Include="util\token.cpp" />
+    <ClCompile Include="util\tokenizer.cpp" />
+    <ClCompile Include="vendor\stb_image.cpp" />
+    <ClCompile Include="VisualNNApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ai\layer.h" />
+    <ClInclude Include="ai\mnist\mnistdataset.h" />
+    <ClInclude Include="ai\mnist\mnistdatasetreader.h" />
+    <ClInclude Include="ai\mnist\mnistimage.h" />
+    <ClInclude Include="ai\neuralnet.h" />
+    <ClInclude Include="ai\neuralnettrainer.h" />
+    <ClInclude Include="ai\neuralnetworkfilereader.h" />
+    <ClInclude Include="ai\neuralnetworkfilewriter.h" />
+    <ClInclude Include="ai\neuron.h" />
+    <ClInclude Include="io\keyboard.h" />
+    <ClInclude Include="io\mouse.h" />
+    <ClInclude Include="objects\cube.h" />
+    <ClInclude Include="objects\materialgenerator.h" />
+    <ClInclude Include="objects\mesh.h" />
+    <ClInclude Include="objects\meshgenerator.h" />
+    <ClInclude Include="objects\meshmanager.h" />
+    <ClInclude Include="objects\modeltransform.h" />
+    <ClInclude Include="objects\object.h" />
+    <ClInclude Include="objects\quad.h" />
+    <ClInclude Include="objects\sphere.h" />
+    <ClInclude Include="objects\torus.h" />
+    <ClInclude Include="objects\triangle.h" />
+    <ClInclude Include="objects\triforce.h" />
+    <ClInclude Include="objects\vertex.h" />
+    <ClInclude Include="renderer\buffers\indexbuffer.h" />
+    <ClInclude Include="renderer\buffers\instancebuffer.h" />
+    <ClInclude Include="renderer\buffers\vertexarray.h" />
+    <ClInclude Include="renderer\buffers\vertexbuffer.h" />
+    <ClInclude Include="renderer\glerror.h" />
+    <ClInclude Include="renderer\instancegroup.h" />
+    <ClInclude Include="renderer\linegroup.h" />
+    <ClInclude Include="renderer\material.h" />
+    <ClInclude Include="renderer\materialmanager.h" />
+    <ClInclude Include="renderer\renderer.h" />
+    <ClInclude Include="renderer\shader.h" />
+    <ClInclude Include="renderer\shadercache.h" />
+    <ClInclude Include="renderer\texture.h" />
+    <ClInclude Include="renderer\texturemanager.h" />
+    <ClInclude Include="system\BaseWindowsApp.h" />
+    <ClInclude Include="system\gthread.h" />
+    <ClInclude Include="util\chronograph.h" />
+    <ClInclude Include="util\logger.h" />
+    <ClInclude Include="util\rollingaverage.h" />
+    <ClInclude Include="util\token.h" />
+    <ClInclude Include="util\tokenizer.h" />
+    <ClInclude Include="vendor\stb_image.h" />
+    <ClInclude Include="VisualNNApp.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
